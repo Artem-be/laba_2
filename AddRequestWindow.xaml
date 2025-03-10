@@ -1,0 +1,30 @@
+﻿<Window x:Class="laba_2.AddRequestWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Добавить заявку" Height="400" Width="300">
+    <Grid>
+        <StackPanel Margin="10">
+            <Label Content="Номер заявки:"/>
+            <TextBox x:Name="RequestNumberTextBox"/>
+            <Label Content="Дата добавления:"/>
+            <DatePicker x:Name="DateAddedPicker"/>
+            <Label Content="Вид авто:"/>
+            <TextBox x:Name="CarTypeTextBox"/>
+            <Label Content="Модель авто:"/>
+            <TextBox x:Name="CarModelTextBox"/>
+            <Label Content="Описание проблемы:"/>
+            <TextBox x:Name="ProblemDescriptionTextBox"/>
+            <Label Content="ФИО клиента:"/>
+            <TextBox x:Name="ClientNameTextBox"/>
+            <Label Content="Номер телефона:"/>
+            <TextBox x:Name="PhoneNumberTextBox"/>
+            <Label Content="Статус:"/>
+            <ComboBox x:Name="StatusComboBox">
+                <ComboBoxItem Content="Новая заявка"/>
+                <ComboBoxItem Content="В процессе ремонта"/>
+                <ComboBoxItem Content="Завершена"/>
+            </ComboBox>
+            <Button Content="Добавить" Click="AddButton_Click" Margin="0,10,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>

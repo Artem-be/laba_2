@@ -1,0 +1,22 @@
+﻿<Window x:Class="laba_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Автосервис АвтоТранс" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="RequestsDataGrid" AutoGenerateColumns="False" Margin="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер заявки" Binding="{Binding RequestNumber}"/>
+                <DataGridTextColumn Header="Дата добавления" Binding="{Binding DateAdded}"/>
+                <DataGridTextColumn Header="Вид авто" Binding="{Binding CarType}"/>
+                <DataGridTextColumn Header="Модель авто" Binding="{Binding CarModel}"/>
+                <DataGridTextColumn Header="Описание проблемы" Binding="{Binding ProblemDescription}"/>
+                <DataGridTextColumn Header="ФИО клиента" Binding="{Binding ClientName}"/>
+                <DataGridTextColumn Header="Номер телефона" Binding="{Binding PhoneNumber}"/>
+                <DataGridTextColumn Header="Статус" Binding="{Binding Status}"/>
+                <DataGridTextColumn Header="Ответственный" Binding="{Binding AssignedMechanic}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Добавить заявку" Click="AddRequest_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10" Width="100"/>
+        <Button Content="Редактировать заявку" Click="EditRequest_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="120,0,0,10" Width="120"/>
+    </Grid>
+    </Window>
