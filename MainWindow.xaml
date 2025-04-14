@@ -1,4 +1,4 @@
-﻿<Window x:Class="laba_2.MainWindow"
+<Window x:Class="laba_2.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Автосервис АвтоТранс" Height="450" Width="800">
@@ -18,5 +18,6 @@
         </DataGrid>
         <Button Content="Добавить заявку" Click="AddRequest_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10" Width="100"/>
         <Button Content="Редактировать заявку" Click="EditRequest_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="120,0,0,10" Width="120"/>
+        <Button Content="Удалить заявку" Click="DeleteRequest_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="250,0,0,10" Width="100"/>
     </Grid>
     </Window>
