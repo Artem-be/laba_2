@@ -1,4 +1,4 @@
-﻿using System.Text;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -41,6 +41,16 @@ public partial class MainWindow : Window
             {
                 RequestsDataGrid.Items.Refresh();
             }
+        }
+    }
+
+    private void DeleteRequest_Click(object sender, RoutedEventArgs e)
+    {
+        var selectedRequest = RequestsDataGrid.SelectedItem as RepairRequest;
+        if (selectedRequest != null)
+        {
+            requests.Remove(selectedRequest);
+            RequestsDataGrid.Items.Refresh();
         }
     }
 }
